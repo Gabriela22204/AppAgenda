@@ -6,6 +6,14 @@ public class Contato {
     private String telefone;
 
     public Contato(String nome, String telefone) {
+
+        this.nome = nome;
+        this.telefone = telefone;
+    }
+
+    public Contato(int id, String nome, String telefone) {
+
+        this.id = id;
         this.nome = nome;
         this.telefone = telefone;
     }
@@ -14,9 +22,7 @@ public class Contato {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+    public void setId(int id) {this.id = id; }
 
     public String getNome() {
         return nome;
